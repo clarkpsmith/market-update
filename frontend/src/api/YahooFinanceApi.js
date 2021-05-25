@@ -1,5 +1,5 @@
 import axios from "axios";
-import { yahooFinanceApiKey } from "../apiKeys";
+import { yahooFinanceApiKey } from "../apiKey";
 const BASE_URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com";
 
 class YahooFinanceApi {

@@ -32,7 +32,7 @@ Create and account to get your Api Key
 
 **Front End**
 
-
+1. Create an apiKey.js file and add your Api Key to a variable called YahooFinanceApiKey, export Api Key variable, and import YahooFinanceApiKey into YahooFinanceApi.js 
 1. Install dependencies (npm install)
 2. Start front end server (npm start)
 
