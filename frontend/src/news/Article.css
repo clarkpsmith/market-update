@@ -1,0 +1,21 @@
+.Article {
+  border-top: 1px solid grey;
+  padding: 15px;
+}
+
+.Article-date {
+  font-size: 12px;
+}
+.Article-link {
+  color: rgb(200, 210, 236);
+}
+
+.Article-title:hover {
+  color: rgb(187, 183, 183);
+}
+.Article-source {
+  font-size: 12px;
+}
+.Article-description {
+  font-size: 14px;
+}

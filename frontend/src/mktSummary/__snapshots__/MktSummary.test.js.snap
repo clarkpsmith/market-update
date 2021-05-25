@@ -1,0 +1,442 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MktSummary"
+  >
+    <div
+      class="MktSummary-indices"
+    >
+      <h3
+        class="MktSummary-index-title"
+      >
+        Market Summary
+      </h3>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            S&P 500
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              4,154.57
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: red;"
+        >
+          -0.81 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            Dow Jones Industrial Average
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              34,293.16
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: red;"
+        >
+          -1.29 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            NASDAQ Composite
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              13,392.33
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: red;"
+        >
+          -0.07 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            Russell 2000
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              2,210.99
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: red;"
+        >
+          -0.08 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            CBOE Interest Rate 10 Year T No
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              1.63
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: LimeGreen;"
+        >
+          1.44 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            USD/EUR
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              0.82
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: LimeGreen;"
+        >
+          -0.22 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            Gold Jun 21
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              1,835.70
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: red;"
+        >
+          -0.10 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            Crude Oil Jun 21
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              65.36
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: LimeGreen;"
+        >
+          0.68 %
+        </button>
+      </div>
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title IndexItem-title"
+        >
+          <span
+            title="Expand"
+          >
+            Bitcoin USD
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              56,455.83
+            </span>
+          </span>
+        </h4>
+        <button
+          class="Stockinfo-daily-change Item-btn-change"
+          style="background-color: red;"
+        >
+          -0.82 %
+        </button>
+      </div>
+    </div>
+    <div
+      class="NewsSummary"
+    >
+      <h3
+        class="NewsSummary-title"
+      >
+        Market News
+      </h3>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://www.marketwatch.com/story/trade-desk-stock-tumbles-even-after-10-for-1-stock-split-profit-and-revenue-that-beat-expectations-2021-05-10?siteid=yhoof2&yptr=yahoo"
+          class="Article-link"
+          href="https://www.marketwatch.com/story/trade-desk-stock-tumbles-even-after-10-for-1-stock-split-profit-and-revenue-that-beat-expectations-2021-05-10?siteid=yhoof2&yptr=yahoo"
+        />
+        <h5
+          class="Article-title"
+        >
+          Trade Desk stock tumbles even after 10-for-1 stock split, profit and revenue that beat expectations
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://www.marketwatch.com/story/bidens-plan-to-fully-tax-capital-gains-is-good-policy-11620658190?siteid=yhoof2&yptr=yahoo"
+          class="Article-link"
+          href="https://www.marketwatch.com/story/bidens-plan-to-fully-tax-capital-gains-is-good-policy-11620658190?siteid=yhoof2&yptr=yahoo"
+        />
+        <h5
+          class="Article-title"
+        >
+          Biden’s plan to fully tax capital gains is good policy
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://finance.yahoo.com/news/buy-2-stocks-jump-over-132944441.html"
+          class="Article-link"
+          href="https://finance.yahoo.com/news/buy-2-stocks-jump-over-132944441.html"
+        />
+        <h5
+          class="Article-title"
+        >
+          Buy These 2 New Stocks Before They Jump Over 80%, Says JPMorgan
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://www.investors.com/news/technology/palantir-stock-palantir-earnings-pltr-q1-2021/?src=A00220&yptr=yahoo"
+          class="Article-link"
+          href="https://www.investors.com/news/technology/palantir-stock-palantir-earnings-pltr-q1-2021/?src=A00220&yptr=yahoo"
+        />
+        <h5
+          class="Article-title"
+        >
+          Palantir Stock To Report Earnings As Software Growth Stocks Struggle
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://www.barrons.com/articles/ford-stock-gets-bump-from-electric-f-150-unveiling-announcement-51620668315?siteid=yhoof2&yptr=yahoo"
+          class="Article-link"
+          href="https://www.barrons.com/articles/ford-stock-gets-bump-from-electric-f-150-unveiling-announcement-51620668315?siteid=yhoof2&yptr=yahoo"
+        />
+        <h5
+          class="Article-title"
+        >
+          Ford Stock Gets Bump From Electric F-150 Unveiling Announcement
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://www.investors.com/news/spce-stock-virgin-galactic-earnings-q1-2021/?src=A00220&yptr=yahoo"
+          class="Article-link"
+          href="https://www.investors.com/news/spce-stock-virgin-galactic-earnings-q1-2021/?src=A00220&yptr=yahoo"
+        />
+        <h5
+          class="Article-title"
+        >
+          Virgin Galactic To Report As Rival Eyes Start Of Space Tourism Flights
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://finance.yahoo.com/news/little-too-young-medicare-5-200000871.html"
+          class="Article-link"
+          href="https://finance.yahoo.com/news/little-too-young-medicare-5-200000871.html"
+        />
+        <h5
+          class="Article-title"
+        >
+          A little too young for Medicare? Here are 5 other health insurance options
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://finance.yahoo.com/news/jessica-alba-honest-co-slumps-162626816.html"
+          class="Article-link"
+          href="https://finance.yahoo.com/news/jessica-alba-honest-co-slumps-162626816.html"
+        />
+        <h5
+          class="Article-title"
+        >
+          Jessica Alba’s Honest Co. Slumps Less Than a Week After Its IPO
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://finance.yahoo.com/news/california-man-fraudulently-obtained-5m-225619351.html"
+          class="Article-link"
+          href="https://finance.yahoo.com/news/california-man-fraudulently-obtained-5m-225619351.html"
+        />
+        <h5
+          class="Article-title"
+        >
+          California man fraudulently got $5M in COVID-19 relief money to buy a Ferrari, Bentley and Lamborghini, authorities say
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <div
+        class="Article"
+      >
+        <a
+          aria-label="https://www.investors.com/research/what-is-a-dividend-branch/?src=A00220&yptr=yahoo"
+          class="Article-link"
+          href="https://www.investors.com/research/what-is-a-dividend-branch/?src=A00220&yptr=yahoo"
+        />
+        <h5
+          class="Article-title"
+        >
+          What Is A Dividend? Plus The 5 Best Dividend Stocks Now
+        </h5>
+        <div
+          class="Article-source"
+        />
+      </div>
+      <br />
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,42 @@
+.NavBar {
+  background-color: rgb(24, 25, 26);
+  font-size: larger;
+  border-bottom: 2px solid grey;
+  text-align: left;
+}
+
+.Navbar-brand {
+  color: rgb(200, 210, 236);
+  font-size: larger;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+.Navbar-brand:hover {
+  text-decoration: none !important;
+  color: white;
+}
+.navlinks:hover {
+  text-decoration: none !important;
+}
+
+.navlinks-logout {
+  color: rgb(200, 210, 236);
+  margin-left: 10px;
+  text-decoration: none !important;
+}
+
+.navlinks-logout:hover {
+  text-decoration: none;
+  color: white;
+}
+.navlinks {
+  padding-left: 7px;
+  padding-right: 7px;
+  text-decoration: none !important;
+}
+
+.Navbar-logo {
+  padding-right: 5px;
+  padding-bottom: 5px;
+}

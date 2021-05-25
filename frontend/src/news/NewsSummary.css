@@ -1,0 +1,18 @@
+.NewsSummary {
+  background-color: black;
+}
+.NewsSummary-loading {
+  background-color: black;
+  height: 100vh;
+}
+
+.NewsSummary {
+  text-align: left;
+  color: white;
+}
+
+.NewsSummary-title {
+  padding: 10px;
+  text-align: center;
+  color: rgb(200, 210, 236);
+}

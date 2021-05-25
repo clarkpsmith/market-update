@@ -1,0 +1,10 @@
+export const ERROR = "ERROR";
+export const ADD_TICKER = "ADD_TICKER";
+export const REMOVE_TICKER = "REMOVE_TICKER";
+export const UPDATE_CURR_USER = "UPDATE_CURR_USER";
+export const LOG_OUT = "LOG_OUT";
+export const SIGN_UP = "SIGN_UP";
+export const UPDATE_PROFILE = "UPDATE_PROFILE";
+export const REFRESH_TICKER = "REFRESH_TICKER";
+export const SET_WATCHLIST_DATA = "SET_WATCHLIST_DATA";
+export const SEARCH_TICKER_DATA = "SEARCH_TICKER_DATA";

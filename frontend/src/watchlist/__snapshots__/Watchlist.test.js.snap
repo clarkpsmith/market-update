@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Watchlist"
+  >
+    <div>
+      <section
+        class="SearchBlock"
+      >
+        <div
+          class="SearchBlock-card"
+        >
+          <div
+            class="SearchBlock-search"
+          >
+            <div
+              class="SearchForm"
+            >
+              <form
+                class="SearchForm-form form-inline"
+              >
+                <input
+                  class="SearchForm-input"
+                  id="searchTerm"
+                  name="searchTerm"
+                  placeholder="Enter ticker symbol..."
+                  type="text"
+                  value=""
+                />
+                <button
+                  class="SearchForm-btn btn btn-secondary btn-md"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+          <div
+            class="results"
+          />
+          <div
+            class="SearchBlock-no-results"
+          />
+        </div>
+      </section>
+      <h3
+        class="Watchlist-title"
+      >
+        Your Watchlist
+      </h3>
+    </div>
+    <div
+      class="Watchlist-stocks"
+    >
+      <div
+        class="Item"
+      >
+        <h4
+          class="Item-title"
+        >
+          <span
+            title="Expand"
+          >
+            TSLA
+          </span>
+          <span>
+            <button
+              class="Item-btn-watchlist btn btn-secondary btn-sm"
+              type="button"
+            >
+              Add
+            </button>
+          </span>
+          <span>
+            <span
+              class="Stockinfo-price"
+              title="Current stock price, click to refresh"
+            >
+              636.29
+            </span>
+          </span>
+        </h4>
+        <div
+          class="Item-fullname"
+        >
+          Tesla, Inc. 
+          <span>
+            <button
+              class="Stockinfo-daily-change Item-btn-change"
+              style="background-color: red;"
+            >
+              -5.37 %
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

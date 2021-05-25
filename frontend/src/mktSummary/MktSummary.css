@@ -1,0 +1,22 @@
+.MktSummary {
+  /* border-bottom: 1px solid grey; */
+  background-color: black;
+}
+.MktSummary-loading {
+  background-color: black;
+  height: 100vh;
+}
+
+.MktSummary-news {
+  text-align: left;
+  color: white;
+}
+
+.MktSummary-index-title {
+  padding: 10px;
+  color: rgb(200, 210, 236);
+}
+
+.MktSummary-indices {
+  border-bottom: 2px solid grey;
+}

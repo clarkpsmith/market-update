@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="SignUp"
+  >
+    <div
+      class="SignUp-block"
+    >
+      <h2
+        class="SignUp-title"
+      >
+        User Profile
+      </h2>
+      <form
+        class="SignUp-form"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            for="username"
+          >
+            Username
+          </label>
+          <br />
+          <div>
+            testuser
+          </div>
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="firstName"
+          >
+            First Name
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="firstName"
+            name="firstName"
+            placeholder="test"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="lastName"
+          >
+            Last Name
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="lastName"
+            name="lastName"
+            placeholder="user"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="email"
+          >
+            Email
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="email"
+            name="email"
+            placeholder="testuser@gmail.com"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="password"
+          >
+            Confirm password to make changes: 
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="password"
+            name="password"
+            required=""
+            type="password"
+            value=""
+          />
+          <br />
+        </div>
+        <button
+          class="SignUp-btn btn btn-secondary btn-md"
+          text-align="center"
+        >
+          Save Changes
+        </button>
+        <br />
+        <br />
+      </form>
+      <div
+        class="delete-profile"
+      >
+        <br />
+        <br />
+        <button
+          class="btn btn-danger"
+          type="button"
+        >
+          Delete Profile
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="SignUp"
+  >
+    <div
+      class="SignUp-block"
+    >
+      <h3
+        class="SignUp-title"
+      >
+        Sign Up
+      </h3>
+      <form
+        class="SignUp-form"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            for="username"
+          >
+            Username
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="username"
+            name="username"
+            required=""
+            type="text"
+            value=""
+          />
+          <br />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="password"
+          >
+            Password
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="password"
+            name="password"
+            required=""
+            type="password"
+            value=""
+          />
+          <br />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="firstName"
+          >
+            First Name
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="firstName"
+            name="firstName"
+            required=""
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="lastName"
+          >
+            Last Name
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="lastName"
+            name="lastName"
+            required=""
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <label
+            for="email"
+          >
+            Email
+          </label>
+          <br />
+          <input
+            class="SignUp-input"
+            id="email"
+            name="email"
+            required=""
+            type="text"
+            value=""
+          />
+        </div>
+        <button
+          class="SignUp-btn btn btn-secondary btn-md"
+        >
+          Submit
+        </button>
+        <br />
+        <br />
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

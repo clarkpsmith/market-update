@@ -1,0 +1,87 @@
+.Stockinfo {
+  text-align: left;
+  border-top: 1px solid grey;
+  padding: 10px 15px;
+  color: white;
+  background-color: black;
+  border-bottom: 1px solid grey;
+}
+
+.Stockinfo-chart {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Stockinfo-price {
+  text-align: right;
+  float: right;
+}
+
+.Stockinfo-daily-change {
+  float: right;
+  padding: 0px 3px;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  box-shadow: none;
+}
+
+.stats {
+  text-align: right;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.stat-titles {
+  color: grey;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.exchange {
+  padding-right: 5px;
+  color: white;
+}
+
+.Stockinfo-watchlist-btn {
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 1px 3px !important;
+  margin-bottom: 5px !important;
+}
+
+.Stockinfo-show {
+  font-size: 12px;
+}
+
+.Stockinfo-info-icon {
+  font-size: 9px;
+  margin-left: 3px;
+  color: rgb(200, 210, 236);
+  transition: all 0.2s;
+}
+
+.Stockinfo-data {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 414px) {
+  .stat-titles {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .Stockinfo {
+    padding: 10px;
+  }
+  .Stockinfo-info-icon {
+    font-size: 7px;
+  }
+  html {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .Stockinfo-name {
+    margin-bottom: 0px;
+  }
+}

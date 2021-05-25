@@ -1,0 +1,27 @@
+.Watchlist {
+  color: white;
+  background-color: black;
+  height: 100vh;
+}
+.Watchlist-title {
+  background-color: black;
+  color: rgb(200, 210, 236);
+  padding: 5px;
+  margin-bottom: 0;
+  border-bottom: 1px solid grey;
+}
+
+.Chase-loading {
+  display: flex;
+  justify-content: center;
+}
+
+.Watchlist-stocks {
+  border-bottom: 1px solid grey;
+}
+
+.Watchlist-empty {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+}

@@ -1,0 +1,36 @@
+.SearchBlock {
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+.SearchBlock-btn {
+  margin: 5px;
+}
+.SearchBlock-title {
+  color: rgb(200, 210, 236);
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+.SearchBlock-card {
+  background-color: black;
+  width: 100vw;
+  border-radius: 2px;
+  border-bottom: 2px solid grey;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.SearchBlock-description {
+  color: grey;
+}
+
+.SearchBlock-search {
+  display: flex;
+  justify-content: center;
+}
+.SearchBlock-no-results {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}

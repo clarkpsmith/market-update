@@ -1,0 +1,53 @@
+.SignUp {
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border-radius: 1px;
+}
+.SignUp-form {
+  text-align: left;
+  padding: 25px;
+  padding-left: 50px;
+  width: 400px;
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+.SignUp-input {
+  border-radius: 3px;
+
+  width: 90%;
+  border: 1px solid rgb(216, 213, 213);
+}
+
+.SignUp-btn {
+  margin: 25px;
+  float: right;
+  margin-right: 35px;
+}
+
+.SignUp-block {
+  margin: 50px;
+}
+
+.SignUp-title {
+  padding: 10px;
+  text-align: center;
+  color: rgb(200, 210, 236);
+}
+
+.delete-profile {
+  text-align: right;
+  padding-right: 0px;
+  background-color: black;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+  .delete-profile {
+    padding-right: 60px;
+  }
+}

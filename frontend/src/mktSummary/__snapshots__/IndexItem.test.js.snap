@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Item"
+  >
+    <h4
+      class="Item-title IndexItem-title"
+    >
+      <span
+        title="Expand"
+      >
+        Apple Inc.
+      </span>
+      <span>
+        <span
+          class="Stockinfo-price"
+          title="Current stock price, click to refresh"
+        >
+          130.21
+        </span>
+      </span>
+    </h4>
+    <button
+      class="Stockinfo-daily-change Item-btn-change"
+      style="background-color: LimeGreen;"
+    >
+      0.53 %
+    </button>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="News"
+  >
+    <div
+      class="Article"
+    >
+      <a
+        aria-label="See Article"
+        class="Article-link"
+        href="https://finance.yahoo.com/news/tesla-inc-tsla-still-great-170544919.html?.tsrc=rss"
+      >
+        <div
+          class="Article-date"
+        >
+           Thu, 13 May 2021
+        </div>
+      </a>
+      <h5
+        class="Article-title"
+      >
+        Is Tesla Inc. (TSLA) Still A Great Investment Choice?
+      </h5>
+      <div
+        class="Article-description"
+      />
+    </div>
+    <div
+      class="Article"
+    >
+      <a
+        aria-label="See Article"
+        class="Article-link"
+        href="https://finance.yahoo.com/news/tesla-staring-deepest-weekly-drop-164056074.html?.tsrc=rss"
+      >
+        <div
+          class="Article-date"
+        >
+           Thu, 13 May 2021
+        </div>
+      </a>
+      <h5
+        class="Article-title"
+      >
+        Tesla Staring at Deepest Weekly Drop Since Virus-Fueled Selloff
+      </h5>
+      <div
+        class="Article-description"
+      />
+    </div>
+    <div
+      class="Article"
+    >
+      <a
+        aria-label="See Article"
+        class="Article-link"
+        href="https://finance.yahoo.com/news/1-musk-decries-bitcoins-insane-162319689.html?.tsrc=rss"
+      >
+        <div
+          class="Article-date"
+        >
+           Thu, 13 May 2021
+        </div>
+      </a>
+      <h5
+        class="Article-title"
+      >
+        UPDATE 1-Musk decries bitcoin's 'insane' energy use after Tesla payment U-turn
+      </h5>
+      <div
+        class="Article-description"
+      />
+    </div>
+    <div
+      class="Article"
+    >
+      <a
+        aria-label="See Article"
+        class="Article-link"
+        href="https://finance.yahoo.com/m/10b712f4-13ec-3079-a9fb-dcc85ae15a2c/tesla-stock-breaks-support%2C.html?.tsrc=rss"
+      >
+        <div
+          class="Article-date"
+        >
+           Thu, 13 May 2021
+        </div>
+      </a>
+      <h5
+        class="Article-title"
+      >
+        Tesla Stock Breaks Support, Bitcoin Price Tumbles After Elon Musk Halts Cryptocurrency Use For Vehicle Purchases
+      </h5>
+      <div
+        class="Article-description"
+      />
+    </div>
+    <div
+      class="Article"
+    >
+      <a
+        aria-label="See Article"
+        class="Article-link"
+        href="https://finance.yahoo.com/news/grayscale-ceo-sees-etf-solution-161812323.html?.tsrc=rss"
+      >
+        <div
+          class="Article-date"
+        >
+           Thu, 13 May 2021
+        </div>
+      </a>
+      <h5
+        class="Article-title"
+      >
+        Grayscale CEO Sees ETF as Solution to Biggest Crypto Fund’s Woes
+      </h5>
+      <div
+        class="Article-description"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

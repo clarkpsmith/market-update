@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Article"
+  >
+    <a
+      aria-label="See Article"
+      class="Article-link"
+      href="https://finance.yahoo.com/news/bytedance-hires-thousands-challenge-e-000000955.html?.tsrc=rss"
+    >
+      <div
+        class="Article-date"
+      >
+         Mon, 10 May 2021
+      </div>
+    </a>
+    <h5
+      class="Article-title"
+    >
+      ByteDance Hires Thousands to Challenge E-Commerce King Alibaba
+    </h5>
+    <div
+      class="Article-description"
+    />
+  </div>
+</DocumentFragment>
+`;
