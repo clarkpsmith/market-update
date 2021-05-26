@@ -1,0 +1,12 @@
+.IndexInfo-name {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 414px) {
+  .Indexinfo-description {
+    margin-top: -7px;
+  }
+  .IndexInfo-name {
+    font-size: 20px;
+  }
+}

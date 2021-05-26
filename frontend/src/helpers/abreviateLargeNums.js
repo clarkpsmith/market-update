@@ -50,4 +50,4 @@ function abreviateLargeNums(num) {
   } else return `${addCommas(num)}`;
 }
 
-module.exports = { abreviateLargeNums, addCommas };
+export { abreviateLargeNums, addCommas };

@@ -1,3 +1,14 @@
-.IndexItem-title {
-  margin-bottom: 3px;
+@media only screen and (max-width: 414px) {
+  .IndexItem-title {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .IndexItem-title {
+    font-size: 16px;
+  }
+  .Stockinfo-daily-change {
+    font-size: 16px;
+  }
 }

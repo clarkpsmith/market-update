@@ -11,6 +11,7 @@ import { useDispatch } from "react-redux";
 import Chart from "../chart/Chart";
 import News from "../news/News";
 import ChaseLoading from "../chaseloading/ChaseLoading";
+import "./IndexInfo.css";
 
 const IndexInfo = ({ ticker }) => {
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const IndexInfo = ({ ticker }) => {
     market: marketChangeAmt,
   });
   const [percent, setPercent] = useState(true);
-  //   const shortenedName = ticker.shortName.length > 20 ?
+
   useEffect(() => {
     async function getChartData() {
       const chartData = await YahooFinanceApi.getChart(ticker.symbol);
@@ -122,7 +123,7 @@ const IndexInfo = ({ ticker }) => {
   if (!collapse)
     return (
       <div className="Stockinfo">
-        <h4 className="Stockinfo-name">
+        <h4 className="IndexInfo-name">
           <span title="Collapse" onClick={handleCollapse}>
             {ticker.shortName}
             {/* <span className="Stockinfo-info-icon">
@@ -141,7 +142,7 @@ const IndexInfo = ({ ticker }) => {
             </span> */}
           </span>
         </h4>
-        <div className="Stockinfo-description">
+        <div className="Indexinfo-description">
           <span className="exchange">{ticker.fullExchangeName} </span>
           {ticker.symbol}
           <span>
