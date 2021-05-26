@@ -4,6 +4,7 @@ import UserContext from "../common/UserContext";
 import Alert from "../helpers/Alert";
 import { Button, Form, FormGroup } from "reactstrap";
 import "./SignUp.css";
+import "./Profile.css";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ChaseLoading from "../chaseloading/ChaseLoading";
@@ -51,7 +52,7 @@ const Profile = () => {
     );
   }
   return (
-    <div className="SignUp">
+    <div className="Profile">
       <div className="SignUp-block">
         <h2 className="SignUp-title">User Profile</h2>
         <Form className="SignUp-form" onSubmit={handleSubmit}>

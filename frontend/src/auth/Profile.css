@@ -1,0 +1,9 @@
+.Profile {
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  /* height: 100vh; */
+  border-radius: 1px;
+}
