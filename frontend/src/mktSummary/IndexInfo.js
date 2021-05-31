@@ -129,7 +129,11 @@ const IndexInfo = ({ ticker }) => {
     return (
       <div className="Stockinfo">
         <h4 className="IndexInfo-name">
-          <span title="Collapse" onClick={handleCollapse}>
+          <span
+            className="IndexInfo-name-clickable"
+            title="Collapse"
+            onClick={handleCollapse}
+          >
             {ticker.shortName}
             {/* <span className="Stockinfo-info-icon">
               <FontAwesomeIcon icon={faInfo} />

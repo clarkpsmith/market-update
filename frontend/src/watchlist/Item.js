@@ -63,7 +63,11 @@ const Item = ({ ticker }) => {
     return (
       <div className="Item">
         <h4 className="Item-title">
-          <span title="Expand" onClick={toggleExpand}>
+          <span
+            className="Item-title-clickable"
+            title="Expand"
+            onClick={toggleExpand}
+          >
             {ticker.symbol}
             {/* <span className="Item-info-icon">
               <FontAwesomeIcon icon={faInfo} />

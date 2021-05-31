@@ -2,7 +2,7 @@
   font-size: 24px;
 }
 
-.IndexInfo-name:hover {
+.IndexInfo-name-clickable:hover {
   color: rgb(187, 183, 183);
   cursor: pointer;
 }

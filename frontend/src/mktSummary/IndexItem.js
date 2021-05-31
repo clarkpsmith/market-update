@@ -41,7 +41,11 @@ const IndexItem = ({ ticker }) => {
     return (
       <div className="Item">
         <h4 className="Item-title IndexItem-title">
-          <span title="Expand" onClick={handleExpand}>
+          <span
+            className="Item-title-clickable"
+            title="Expand"
+            onClick={handleExpand}
+          >
             {ticker.shortName}
           </span>
           <span>
