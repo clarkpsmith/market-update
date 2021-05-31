@@ -68,6 +68,11 @@
   cursor: pointer;
 }
 
+.Stockinfo-news-title:hover {
+  color: rgb(187, 183, 183);
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 414px) {
   .stat-titles {
     padding-left: 5px !important;
