@@ -29,7 +29,7 @@ class YahooFinanceApi {
     const response = await this.request(
       `market/get-charts?region=us&symbol=${ticker}&interval=${interval}&range=${range}`
     );
-    console.log("RES", response);
+
     const symbol = response.data.chart.result[0].meta.symbol;
     if (
       !response.data.chart.result[0].indicators ||

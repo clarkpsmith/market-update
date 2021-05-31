@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavbarToggler,
-  Collapse,
-} from "reactstrap";
+import { Navbar, Nav, NavItem, NavbarToggler, Collapse } from "reactstrap";
 import "./Navbar.css";
 import { useSelector } from "react-redux";
 

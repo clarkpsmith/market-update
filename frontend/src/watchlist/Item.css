@@ -26,6 +26,11 @@
   margin-bottom: 0px;
 }
 
+.Item-title:hover {
+  color: rgb(187, 183, 183);
+  cursor: pointer;
+}
+
 .Item-info-icon {
   font-size: 8px;
   margin-left: 6px;

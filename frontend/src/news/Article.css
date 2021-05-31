@@ -12,6 +12,7 @@
 
 .Article-title:hover {
   color: rgb(187, 183, 183);
+  cursor: pointer;
 }
 .Article-source {
   font-size: 12px;

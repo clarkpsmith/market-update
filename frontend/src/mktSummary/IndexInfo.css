@@ -2,6 +2,11 @@
   font-size: 24px;
 }
 
+.IndexInfo-name:hover {
+  color: rgb(187, 183, 183);
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 414px) {
   .Indexinfo-description {
     margin-top: -7px;

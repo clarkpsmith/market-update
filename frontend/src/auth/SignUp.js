@@ -46,6 +46,9 @@ const SignUp = ({ signUp }) => {
   return (
     <div className="SignUp">
       <div className="SignUp-block">
+        <h4 className="SignUp-info">
+          Want to create a personal watchlist of your favorite stocks?
+        </h4>
         <h3 className="SignUp-title">Sign Up</h3>
         <Form className="SignUp-form" onSubmit={handleSubmit}>
           <FormGroup>

@@ -8,7 +8,6 @@ import "./Delete.css";
 const Delete = () => {
   const currentUser = useSelector((store) => store.currentUser);
   const { logOut } = useContext(UserContext);
-  const history = useHistory();
 
   async function handleDelete() {
     const res = await MarketUpdateApi.deleteProfile(currentUser.username);

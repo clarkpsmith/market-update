@@ -119,11 +119,14 @@ const Stockinfo = ({ ticker }) => {
   const heldPercentInsiders = ticker.heldPercentInsiders
     ? `${ticker.heldPercentInsiders.toFixed(2)} %`
     : "N/A";
-  let percentOffHigh = (
-    ((ticker.fiftyTwoWeekHigh - ticker.regularMarketPrice) /
-      ticker.fiftyTwoWeekHigh) *
-    100
-  ).toFixed(2);
+  let percentOffHigh =
+    ticker.regularMarketPrice && ticker.fiftyTwoWeekHigh
+      ? (
+          ((ticker.fiftyTwoWeekHigh - ticker.regularMarketPrice) /
+            ticker.fiftyTwoWeekHigh) *
+          100
+        ).toFixed(2)
+      : "N/A";
 
   const stringOffHigh = percentOffHigh ? (
     <span style={{ color: "red" }}>{`-${percentOffHigh} %`}</span>
@@ -131,11 +134,14 @@ const Stockinfo = ({ ticker }) => {
     <span style={{ color: "LimeGreen" }}>52 Week High</span>
   );
 
-  let percentAboveLow = (
-    ((ticker.regularMarketPrice - ticker.fiftyTwoWeekLow) /
-      ticker.regularMarketPrice) *
-    100
-  ).toFixed(2);
+  let percentAboveLow =
+    ticker.regularMarketPrice && ticker.fiftyTwoWeekLow
+      ? (
+          ((ticker.regularMarketPrice - ticker.fiftyTwoWeekLow) /
+            ticker.regularMarketPrice) *
+          100
+        ).toFixed(2)
+      : "N/A";
 
   const stringAboveLow = percentAboveLow ? (
     <span style={{ color: "limeGreen" }}>{`${percentAboveLow} %`}</span>
