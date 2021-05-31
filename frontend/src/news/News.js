@@ -25,7 +25,10 @@ const News = ({ ticker }) => {
   }
 
   const articles = [];
-
+  console.log("STOCK NEWS", stockNews);
+  if (stockNews == "No News On This Stock") {
+    return <div className="News">No News</div>;
+  }
   for (let i = 0; i < 5; i++) {
     articles.push(<Article key={stockNews[i].link} data={stockNews[i]} />);
   }

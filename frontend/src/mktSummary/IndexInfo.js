@@ -48,16 +48,21 @@ const IndexInfo = ({ ticker }) => {
     dispatch(refreshTicker(ticker.symbol));
   }
 
-  const open = addCommas(ticker.regularMarketOpen.toFixed(2));
-
-  const high = addCommas(ticker.regularMarketDayHigh.toFixed(2));
-
-  const low = addCommas(ticker.regularMarketDayHigh.toFixed(2));
-
-  const fiftyTwoWeekHigh = addCommas(ticker.fiftyTwoWeekHigh.toFixed(2));
-
-  const fiftyTwoWeekLow = addCommas(ticker.fiftyTwoWeekLow.toFixed(2));
-
+  const open = ticker.regularMarketOpen
+    ? addCommas(ticker.regularMarketOpen.toFixed(2))
+    : "N/A";
+  const high = ticker.regularMarketDayHigh
+    ? addCommas(ticker.regularMarketDayHigh.toFixed(2))
+    : "N/A";
+  const low = ticker.regularMarketDayLow
+    ? addCommas(ticker.regularMarketDayLow.toFixed(2))
+    : "N/A";
+  const fiftyTwoWeekHigh = ticker.fiftyTwoWeekHigh
+    ? addCommas(ticker.fiftyTwoWeekHigh.toFixed(2))
+    : "N/A";
+  const fiftyTwoWeekLow = ticker.fiftyTwoWeekLow
+    ? addCommas(ticker.fiftyTwoWeekLow.toFixed(2))
+    : "N/A";
   let percentColor;
 
   marketChange.market >= 0

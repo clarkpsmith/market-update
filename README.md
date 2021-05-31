@@ -1,5 +1,8 @@
 Market Update is a web based application for tracking stock prices, data, charts, and news on your favorite stocks. The homepage gives users updates on index prices and big news stories in the markets. By creating a user profile, you can keep track of your favorite stocks in a watchlist which allows the user a quick glance at price movements along with an expanded view for each stock that shows chart data for various time periods, stock metrics, and stock news. User passwords are hashed using Bcrypt encryption and stored as encrypted data.
 
+You can view the deployed application at 
+<http://marketupdate.surge.sh/>
+
 
 **Front End Tech Stack**
 (React, Redux)

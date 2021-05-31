@@ -30,11 +30,21 @@ const Stockinfo = ({ ticker }) => {
   if (Object.keys(currentUser).length > 0) {
     alreadyAdded = currentUser.watchlist.filter((t) => t === ticker.symbol);
   }
-  const open = addCommas(ticker.regularMarketOpen.toFixed(2));
-  const high = addCommas(ticker.regularMarketDayHigh.toFixed(2));
-  const low = addCommas(ticker.regularMarketDayHigh.toFixed(2));
-  const fiftyTwoWeekHigh = addCommas(ticker.fiftyTwoWeekHigh.toFixed(2));
-  const fiftyTwoWeekLow = addCommas(ticker.fiftyTwoWeekLow.toFixed(2));
+  const open = ticker.regularMarketOpen
+    ? addCommas(ticker.regularMarketOpen.toFixed(2))
+    : "N/A";
+  const high = ticker.regularMarketDayHigh
+    ? addCommas(ticker.regularMarketDayHigh.toFixed(2))
+    : "N/A";
+  const low = ticker.regularMarketDayLow
+    ? addCommas(ticker.regularMarketDayLow.toFixed(2))
+    : "N/A";
+  const fiftyTwoWeekHigh = ticker.fiftyTwoWeekHigh
+    ? addCommas(ticker.fiftyTwoWeekHigh.toFixed(2))
+    : "N/A";
+  const fiftyTwoWeekLow = ticker.fiftyTwoWeekLow
+    ? addCommas(ticker.fiftyTwoWeekLow.toFixed(2))
+    : "N/A";
 
   const [added, setAdded] = useState(alreadyAdded.length !== 0);
   const marketChangePercent = ticker.regularMarketChangePercent
@@ -52,6 +62,7 @@ const Stockinfo = ({ ticker }) => {
   useEffect(() => {
     async function getChartData() {
       const chartData = await YahooFinanceApi.getChart(ticker.symbol);
+
       setChartData(chartData);
       setLoading(false);
     }

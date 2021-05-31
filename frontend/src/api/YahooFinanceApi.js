@@ -29,8 +29,14 @@ class YahooFinanceApi {
     const response = await this.request(
       `market/get-charts?region=us&symbol=${ticker}&interval=${interval}&range=${range}`
     );
-
+    console.log("RES", response);
     const symbol = response.data.chart.result[0].meta.symbol;
+    if (
+      !response.data.chart.result[0].indicators ||
+      !response.data.chart.result[0].timestamp
+    ) {
+      return "No Chart Data Currently Available";
+    }
     const { indicators, timestamp } = response.data.chart.result[0];
     const quotesArray = indicators.quote[0].close;
 
@@ -61,6 +67,9 @@ class YahooFinanceApi {
       `https://yahoo-finance15.p.rapidapi.com/api/yahoo/ne/news/${symbol}`,
       { headers }
     );
+    if (!response.data.item) {
+      return "No News On This Stock";
+    }
 
     return response.data.item;
   }
