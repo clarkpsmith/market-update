@@ -19,7 +19,6 @@ import Delete from "./delete/Delete";
 import ChaseLoading from "./chaseloading/ChaseLoading";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
   const currentUser = useSelector((store) => store.currentUser);
 
@@ -33,8 +32,6 @@ function App() {
     async function loadUser() {
       MarketUpdateApi.token = currentToken;
       await updateCurrentUser(currentToken);
-
-      setIsLoading(false);
     }
 
     loadUser();
