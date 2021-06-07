@@ -114,9 +114,6 @@ function App() {
     return res;
   }
 
-  // if (isLoading) {
-  //   return <ChaseLoading />;
-  // }
   return (
     <div className="App">
       <UserContext.Provider
