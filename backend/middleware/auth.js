@@ -1,8 +1,8 @@
 "use strict";
 
 const jwt = require("jsonwebtoken");
-const { SECRET_KEY } = require("../config");
-const { UnauthorizedError } = require("../expressError");
+const { SECRET_KEY } = require("../config/config");
+const { UnauthorizedError } = require("../errors/expressError");
 
 /** Middleware: Authenticate user.
  *

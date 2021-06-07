@@ -7,9 +7,9 @@ const {
   NotFoundError,
   BadRequestError,
   UnauthorizedError,
-} = require("../expressError");
+} = require("../errors/expressError");
 
-const { BCRYPT_WORK_FACTOR } = require("../config.js");
+const { BCRYPT_WORK_FACTOR } = require("../config/config.js");
 
 /** Related functions for users. */
 
@@ -188,7 +188,7 @@ class User {
     return user;
   }
 
-  /** Delete given user from database; returns undefined. */
+  /** Delete given user from database*/
 
   static async remove(username) {
     let result = await db.query(

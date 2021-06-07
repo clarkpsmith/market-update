@@ -1,4 +1,4 @@
-const { BadRequestError } = require("../expressError");
+const { BadRequestError } = require("../errors/expressError");
 
 /*pass in a data object to be updated for dataToUpdate
  jsToSql is an already set object depending on its use that contains the sql naming conventions keynames and the corresponding javascript camelcase conventions and keynames
