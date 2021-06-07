@@ -19,6 +19,7 @@ import Delete from "./delete/Delete";
 import ChaseLoading from "./chaseloading/ChaseLoading";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const dispatch = useDispatch();
   const currentUser = useSelector((store) => store.currentUser);
 
@@ -26,7 +27,6 @@ function App() {
     getTokenFromLocalStorage() || null
   );
 
-  const [isLoading, setIsLoading] = useState(true);
   const history = useHistory();
 
   useEffect(() => {
