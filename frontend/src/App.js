@@ -16,7 +16,6 @@ import UserContext from "./common/UserContext";
 import jwt from "jsonwebtoken";
 import MktSummary from "./mktSummary/MktSummary";
 import Delete from "./delete/Delete";
-import ChaseLoading from "./chaseloading/ChaseLoading";
 
 function App() {
   const dispatch = useDispatch();
@@ -94,28 +93,20 @@ function App() {
     }
   }
 
-  async function updateProfile(formData) {
-    try {
-      const res = await MarketUpdateApi.updateProfile(formData);
-      dispatch({ type: UPDATE_PROFILE, currentUser: res.user });
-      return { success: true };
-    } catch (err) {
-      console.error("Update Profile Failed", err);
-      return { success: false, err };
-    }
-  }
-
-  async function apply(username, id) {
-    const res = await MarketUpdateApi.apply(username, id);
-
-    return res;
-  }
+  // async function updateProfile(formData) {
+  //   try {
+  //     const res = await MarketUpdateApi.updateProfile(formData);
+  //     dispatch({ type: UPDATE_PROFILE, currentUser: res.user });
+  //     return { success: true };
+  //   } catch (err) {
+  //     console.error("Update Profile Failed", err);
+  //     return { success: false, err };
+  //   }
+  // }
 
   return (
     <div className="App">
-      <UserContext.Provider
-        value={{ currentUser, apply, updateCurrentUser, logOut, updateProfile }}
-      >
+      <UserContext.Provider value={{ currentUser, updateCurrentUser, logOut }}>
         <Navbar logOut={logOut} />
 
         <main>

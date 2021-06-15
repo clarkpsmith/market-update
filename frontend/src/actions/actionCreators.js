@@ -13,7 +13,6 @@ export function addTickerToList(username, ticker) {
   return async function (dispatch) {
     try {
       await MarketUpdateApi.addTickerToWatchlist(username, ticker.symbol);
-
       return dispatch(addTicker(ticker));
     } catch (e) {
       dispatch(gotError());
@@ -25,7 +24,6 @@ export function refreshTicker(ticker) {
   return async function (dispatch) {
     try {
       const res = await YahooFinanceApi.searchTicker(ticker);
-
       return dispatch(updateTickerData(res[0]));
     } catch (e) {
       dispatch(gotError());
@@ -37,7 +35,6 @@ export function removeTickerFromList(username, ticker) {
   return async function (dispatch) {
     try {
       await MarketUpdateApi.removeFromWatchlist(username, ticker.symbol);
-
       return dispatch(removeTicker(ticker));
     } catch (e) {
       dispatch(gotError());
@@ -49,8 +46,8 @@ export function updateCurrUser(currentToken) {
     try {
       if (currentToken) {
         const { username } = jwt.decode(currentToken);
-        const res2 = await MarketUpdateApi.getCurrentUserData(username);
-        return updatedCurrentUser(res2);
+        const res = await MarketUpdateApi.getCurrentUserData(username);
+        return updatedCurrentUser(res);
       }
     } catch (e) {
       dispatch(gotError());

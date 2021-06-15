@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import "../common/SearchForm.css";
 import UserContext from "../common/UserContext";
 import Alert from "../helpers/Alert";
@@ -6,15 +6,28 @@ import { Button, Form, FormGroup } from "reactstrap";
 import "./SignUp.css";
 import "./Profile.css";
 import { useHistory } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import ChaseLoading from "../chaseloading/ChaseLoading";
+import MarketUpdateApi from "../api/MarketUpdateApi";
+import { UPDATE_PROFILE } from "../actions/types";
 
 const Profile = () => {
-  const { updateProfile } = useContext(UserContext);
+  const dispatch = useDispatch();
   const currentUser = useSelector((store) => store.currentUser);
   const [formErrors, setFormErrors] = useState(null);
   const history = useHistory();
   const [loading, setLoading] = useState(false);
+
+  async function updateProfile(formData) {
+    try {
+      const res = await MarketUpdateApi.updateProfile(formData);
+      dispatch({ type: UPDATE_PROFILE, currentUser: res.user });
+      return { success: true };
+    } catch (err) {
+      console.error("Update Profile Failed", err);
+      return { success: false, err };
+    }
+  }
 
   function handleDelete() {
     history.push("/delete");

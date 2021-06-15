@@ -11,6 +11,7 @@ const Delete = () => {
 
   async function handleDelete() {
     const res = await MarketUpdateApi.deleteProfile(currentUser.username);
+
     logOut();
   }
 

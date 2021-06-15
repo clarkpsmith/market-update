@@ -1,8 +1,5 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-
-import UserContext from "../common/UserContext";
 import Alert from "./Alert";
 
 const messages = ["Invalid Username/Password"];

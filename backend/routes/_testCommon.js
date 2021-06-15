@@ -35,14 +35,14 @@ async function commonBeforeAll() {
     password: "password3",
     isAdmin: false,
   });
-  await User.register({
-    username: "admin",
-    firstName: "ad",
-    lastName: "min",
-    email: "admin@admin.com",
-    password: "admin",
-    isAdmin: true,
-  });
+  // await User.register({
+  //   username: "admin",
+  //   firstName: "ad",
+  //   lastName: "min",
+  //   email: "admin@admin.com",
+  //   password: "admin",
+  //   isAdmin: true,
+  // });
 
   await User.addToWatchList("u1", "aapl");
 }
@@ -60,7 +60,7 @@ async function commonAfterAll() {
 }
 
 const u1Token = createToken({ username: "u1", isAdmin: false });
-const adminToken = createToken({ username: "admin", isAdmin: true });
+// const adminToken = createToken({ username: "admin", isAdmin: true });
 
 module.exports = {
   commonBeforeAll,
@@ -68,5 +68,5 @@ module.exports = {
   commonAfterEach,
   commonAfterAll,
   u1Token,
-  adminToken,
+  // adminToken,
 };

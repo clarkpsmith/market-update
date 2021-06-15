@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 
 function NavBar({ logOut }) {
   const currentUser = useSelector((store) => store.currentUser);
-
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);

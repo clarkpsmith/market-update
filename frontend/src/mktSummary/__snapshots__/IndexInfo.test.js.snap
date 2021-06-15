@@ -6,9 +6,10 @@ exports[`matches snapshot 1`] = `
     class="Stockinfo"
   >
     <h4
-      class="Stockinfo-name"
+      class="IndexInfo-name"
     >
       <span
+        class="IndexInfo-name-clickable"
         title="Collapse"
       >
         Tesla Inc.
@@ -21,7 +22,7 @@ exports[`matches snapshot 1`] = `
       </span>
     </h4>
     <div
-      class="Stockinfo-description"
+      class="Indexinfo-description"
     >
       <span
         class="exchange"
@@ -111,7 +112,7 @@ exports[`matches snapshot 1`] = `
           <div
             class="highcharts-container "
             dir="ltr"
-            id="highcharts-3d4kml7-814"
+            id="highcharts-u1ckuv1-814"
             style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; outline: none;"
           >
             <svg
@@ -124,11 +125,11 @@ exports[`matches snapshot 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <desc>
-                Created with Highcharts 9.1.0
+                Created with Highcharts 9.1.1
               </desc>
               <defs>
                 <clippath
-                  id="highcharts-3d4kml7-815-"
+                  id="highcharts-u1ckuv1-815-"
                 >
                   <rect
                     fill="none"
@@ -139,7 +140,29 @@ exports[`matches snapshot 1`] = `
                   />
                 </clippath>
                 <clippath
-                  id="highcharts-3d4kml7-1320-"
+                  id="highcharts-u1ckuv1-1320-"
+                >
+                  <rect
+                    fill="none"
+                    height="400"
+                    width="110.26202768123295"
+                    x="-99"
+                    y="NaN"
+                  />
+                </clippath>
+                <clippath
+                  id="highcharts-u1ckuv1-1321-"
+                >
+                  <rect
+                    fill="none"
+                    height="NaN"
+                    width="11.26202768123295"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <clippath
+                  id="highcharts-u1ckuv1-1626-"
                 >
                   <rect
                     fill="none"
@@ -150,34 +173,12 @@ exports[`matches snapshot 1`] = `
                   />
                 </clippath>
                 <clippath
-                  id="highcharts-3d4kml7-1321-"
-                >
-                  <rect
-                    fill="none"
-                    height="NaN"
-                    width="3.7143159415024463"
-                    x="0"
-                    y="0"
-                  />
-                </clippath>
-                <clippath
-                  id="highcharts-3d4kml7-1626-"
-                >
-                  <rect
-                    fill="none"
-                    height="400"
-                    width="100.75132291799788"
-                    x="-99"
-                    y="NaN"
-                  />
-                </clippath>
-                <clippath
-                  id="highcharts-3d4kml7-1627-"
+                  id="highcharts-u1ckuv1-1627-"
                 >
                   <rect
                     fill="none"
                     height="40"
-                    width="1.751322917997885"
+                    width="3.7143159415024463"
                     x="0"
                     y="0"
                   />
@@ -537,7 +538,7 @@ exports[`matches snapshot 1`] = `
               >
                 <g
                   class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0"
-                  clip-path="url(#highcharts-3d4kml7-1321-)"
+                  clip-path="url(#highcharts-u1ckuv1-1321-)"
                   data-z-index="0.1"
                   opacity="1"
                   transform="translate(10,0) scale(1 1)"
@@ -566,14 +567,14 @@ exports[`matches snapshot 1`] = `
                 </g>
                 <g
                   class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0 highcharts-tracker"
-                  clip-path="url(#highcharts-3d4kml7-1320-)"
+                  clip-path="url(#highcharts-u1ckuv1-1320-)"
                   data-z-index="0.1"
                   opacity="1"
                   transform="translate(10,0) scale(1 1)"
                 />
                 <g
                   class="highcharts-series highcharts-series-1 highcharts-areaspline-series highcharts-navigator-series"
-                  clip-path="url(#highcharts-3d4kml7-1627-)"
+                  clip-path="url(#highcharts-u1ckuv1-1627-)"
                   data-z-index="0.1"
                   opacity="1"
                   transform="translate(24,0) scale(1 1)"
@@ -597,7 +598,7 @@ exports[`matches snapshot 1`] = `
                 </g>
                 <g
                   class="highcharts-markers highcharts-series-1 highcharts-areaspline-series highcharts-navigator-series"
-                  clip-path="url(#highcharts-3d4kml7-1626-)"
+                  clip-path="url(#highcharts-u1ckuv1-1626-)"
                   data-z-index="0.1"
                   opacity="1"
                   transform="translate(24,0) scale(1 1)"
@@ -780,19 +781,25 @@ exports[`matches snapshot 1`] = `
                   class="highcharts-range-selector-buttons"
                   transform="translate(0,10)"
                 >
-                  <text
-                    style="color:#666666;fill:#666666;"
-                    visibility="visible"
-                    x="10"
-                    y="15"
-                  >
-                    Zoom
-                  </text>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-label"
+                    transform="translate(10,0)"
+                    visibility="visible"
+                  >
+                    <text
+                      data-z-index="1"
+                      style="color:#666666;fill:#666666;"
+                      x="0"
+                      y="15.5"
+                    >
+                      Zoom
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(15,0)"
                     visibility="visible"
                   >
                     <rect
@@ -809,16 +816,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       Day
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(52,0)"
                     visibility="visible"
                   >
                     <rect
@@ -835,16 +842,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       5d
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(89,0)"
                     visibility="visible"
                   >
                     <rect
@@ -861,16 +868,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       1m
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(126,0)"
                     visibility="visible"
                   >
                     <rect
@@ -887,16 +894,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       3m
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(163,0)"
                     visibility="visible"
                   >
                     <rect
@@ -913,16 +920,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       6m
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(200,0)"
                     visibility="visible"
                   >
                     <rect
@@ -939,16 +946,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       YTD
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(237,0)"
                     visibility="visible"
                   >
                     <rect
@@ -965,16 +972,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       1y
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(274,0)"
                     visibility="visible"
                   >
                     <rect
@@ -991,16 +998,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       2y
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(311,0)"
                     visibility="visible"
                   >
                     <rect
@@ -1017,16 +1024,16 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       5y
                     </text>
                   </g>
                   <g
-                    class="highcharts-button highcharts-button-normal"
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
                     data-z-index="7"
                     style="cursor:pointer;"
-                    transform="translate(0,0)"
+                    transform="translate(348,0)"
                     visibility="visible"
                   >
                     <rect
@@ -1043,7 +1050,7 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#333333;font-weight:normal;fill:#333333;"
                       x="NaN"
-                      y="14"
+                      y="15.5"
                     >
                       Max
                     </text>
@@ -1055,7 +1062,6 @@ exports[`matches snapshot 1`] = `
                 >
                   <g
                     class="highcharts-label highcharts-range-label"
-                    style="fill:#666666;"
                     transform="translate(0,0)"
                   >
                     <text
@@ -1084,21 +1090,20 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#335cad;font-family:\\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif;font-size:12px;fill:#335cad;"
                       x="2"
-                      y="14"
+                      y="15"
                     >
                       May 13, 2019
                     </text>
                   </g>
                   <g
                     class="highcharts-label highcharts-range-label"
-                    style="fill:#666666;"
                     transform="translate(9,0)"
                   >
                     <text
                       data-z-index="1"
                       style="color:#666666;font-family:\\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif;font-size:12px;fill:#666666;"
                       x="2"
-                      y="14"
+                      y="15"
                     >
                       →
                     </text>
@@ -1122,7 +1127,7 @@ exports[`matches snapshot 1`] = `
                       data-z-index="1"
                       style="color:#335cad;font-family:\\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif;font-size:12px;fill:#335cad;"
                       x="2"
-                      y="14"
+                      y="15"
                     >
                       May 11, 2021
                     </text>
@@ -1210,7 +1215,7 @@ exports[`matches snapshot 1`] = `
           class="row"
         >
           <div
-            class="stat-titles col-6 col-sm-2 col"
+            class="stat-titles col-6 col-sm-3 col-md-2 col"
           >
             <span
               title="The price at which a security first trades upon the opening of an exchange on a trading day"
@@ -1289,16 +1294,16 @@ exports[`matches snapshot 1`] = `
             <br />
           </div>
           <div
-            class="stats col-6 col-sm-2 col"
+            class="stats col-6 col-sm-3 col-md-2 col"
           >
             130.85
             <br />
             131.26
             <br />
-            131.26
+            129.47
           </div>
           <div
-            class="stat-titles col-6 col-sm-2 col"
+            class="stat-titles col-6 col-sm-3 col-md-2 col"
           >
             <span
               title="Average number of shares traded each day"
@@ -1376,7 +1381,7 @@ exports[`matches snapshot 1`] = `
             </span>
           </div>
           <div
-            class="stats col-6 col-sm-2 col"
+            class="stats col-6 col-sm-3 col-md-2 col"
           >
             78.973 M
             <br />
@@ -1385,7 +1390,7 @@ exports[`matches snapshot 1`] = `
             75.05
           </div>
           <div
-            class="stat-titles col-6 col-sm-2 col"
+            class="stat-titles col-6 col-sm-3 col-md-2 col"
           >
             <span
               title="% difference between the 52 week high and current price"
@@ -1463,7 +1468,7 @@ exports[`matches snapshot 1`] = `
             </span>
           </div>
           <div
-            class="stats col-6 col-sm-2 col"
+            class="stats col-6 col-sm-3 col-md-2 col"
           >
             <span
               style="color: red;"

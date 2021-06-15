@@ -75,19 +75,6 @@ describe("register", function () {
     expect(found.rows[0].password.startsWith("$2b$")).toEqual(true);
   });
 
-  test("works: adds admin", async function () {
-    let user = await User.register({
-      ...newUser,
-      password: "password",
-      isAdmin: true,
-    });
-    expect(user).toEqual({ ...newUser, isAdmin: true });
-    const found = await db.query("SELECT * FROM users WHERE username = 'new'");
-    expect(found.rows.length).toEqual(1);
-    expect(found.rows[0].is_admin).toEqual(true);
-    expect(found.rows[0].password.startsWith("$2b$")).toEqual(true);
-  });
-
   test("bad request with dup data", async function () {
     try {
       await User.register({
@@ -168,23 +155,8 @@ describe("update", function () {
     expect(job).toEqual({
       username: "u1",
       ...updateData,
+      watchlist: ["aapl"],
     });
-  });
-
-  test("works: set password", async function () {
-    let job = await User.update("u1", {
-      password: "new",
-    });
-    expect(job).toEqual({
-      username: "u1",
-      firstName: "U1F",
-      lastName: "U1L",
-      email: "u1@email.com",
-      isAdmin: false,
-    });
-    const found = await db.query("SELECT * FROM users WHERE username = 'u1'");
-    expect(found.rows.length).toEqual(1);
-    expect(found.rows[0].password.startsWith("$2b$")).toEqual(true);
   });
 
   test("not found if no such user", async function () {

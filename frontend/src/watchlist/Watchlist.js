@@ -10,6 +10,7 @@ const Watchlist = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const watchlist = useSelector((store) => store.currentUser.watchlist);
+
   const watchlistData = useSelector((store) => store.watchlistData);
 
   let watchlistString;
@@ -17,16 +18,16 @@ const Watchlist = () => {
 
   useEffect(() => {
     async function getStocks(tickers) {
-      const res = await YahooFinanceApi.searchTicker(tickers);
-
-      dispatch({ type: "SET_WATCHLIST_DATA", watchlistData: res });
+      if (tickers) {
+        const res = await YahooFinanceApi.searchTicker(tickers);
+        dispatch({ type: "SET_WATCHLIST_DATA", watchlistData: res });
+      }
 
       setLoading(false);
     }
-    if (watchlist.length > 0) {
-      getStocks(watchlistString);
-    } else setLoading(false);
-  }, []);
+
+    getStocks(watchlistString);
+  }, [watchlist]);
 
   if (loading) {
     return (

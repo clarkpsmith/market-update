@@ -195,7 +195,7 @@ describe("Profile", () => {
           </MemoryRouter>
         </Provider>
       );
-    await waitForElementToBeRemoved(() => queryByTestId("loading"));
+
     expect(getByPlaceholderText("test")).toBeInTheDocument();
     const firstName = getByPlaceholderText("test");
     fireEvent.change(firstName, { target: { value: "firstchanged" } });
@@ -221,7 +221,7 @@ describe("Delete Page", () => {
         </MemoryRouter>
       </Provider>
     );
-    await waitForElementToBeRemoved(() => queryByTestId("loading"));
+
     expect(
       queryByText("Are you sure you want to delete your profile?")
     ).toBeInTheDocument();
@@ -250,15 +250,14 @@ describe("Signup", () => {
   });
 
   it("user signup works", async () => {
-    const { queryByTestId, queryAllByText, queryByText, getByLabelText } =
-      await render(
-        <Provider store={store}>
-          <MemoryRouter initialEntries={["/signup"]}>
-            <App />
-          </MemoryRouter>
-        </Provider>
-      );
-    await waitForElementToBeRemoved(() => queryByTestId("loading"));
+    const { queryByTestId, queryByText, getByLabelText } = await render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={["/signup"]}>
+          <App />
+        </MemoryRouter>
+      </Provider>
+    );
+
     expect(queryByText("Sign Up")).toBeInTheDocument();
     expect(getByLabelText("First Name")).toBeInTheDocument();
     expect(queryByText("Submit")).toBeInTheDocument();

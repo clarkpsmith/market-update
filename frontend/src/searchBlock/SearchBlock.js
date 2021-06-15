@@ -16,6 +16,7 @@ const SearchBlock = () => {
   useEffect(() => {
     dispatch({ type: SEARCH_TICKER_DATA, tickerData: null });
   }, [dispatch]);
+
   async function search(ticker) {
     dispatch({ type: SEARCH_TICKER_DATA, tickerData: null });
     setNoResults(null);

@@ -1,5 +1,5 @@
 const { sqlForPartialUpdate, sqlForQueryStrings } = require("./sql");
-const { BadRequestError } = require("../expressError");
+const { BadRequestError } = require("../errors/expressError");
 
 describe("test sqlForPartialUpdate function", () => {
   const jsToSql = {

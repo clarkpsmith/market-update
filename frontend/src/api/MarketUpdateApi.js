@@ -77,6 +77,9 @@ class MarketUpdateApi {
   }
 
   static async updateProfile(formData) {
+    // check if pasword matches, if not throws error
+    await this.getToken(formData.username, formData.password);
+
     const res = await this.request(
       `users/${formData.username}`,
       {

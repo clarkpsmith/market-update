@@ -9,6 +9,7 @@ exports[`matches snapshot 1`] = `
       class="Item-title IndexItem-title"
     >
       <span
+        class="Item-title-clickable"
         title="Expand"
       >
         Apple Inc.

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Stockinfo.css";
-
 import { Button, Row, Col } from "reactstrap";
 import { abreviateLargeNums, addCommas } from "../helpers/abreviateLargeNums";
 import YahooFinanceApi from "../api/YahooFinanceApi";
@@ -20,16 +19,17 @@ import { SEARCH_TICKER_DATA } from "../actions/types";
 
 const Stockinfo = ({ ticker }) => {
   const dispatch = useDispatch();
-
   const [loading, setLoading] = useState(true);
   const [chartData, setChartData] = useState(null);
   const currentUser = useSelector((store) => store.currentUser);
   const [collapse, setCollapse] = useState(false);
   const [collapseNews, setCollapseNews] = useState(true);
+
   let alreadyAdded = [];
   if (Object.keys(currentUser).length > 0) {
     alreadyAdded = currentUser.watchlist.filter((t) => t === ticker.symbol);
   }
+
   const open = ticker.regularMarketOpen
     ? addCommas(ticker.regularMarketOpen.toFixed(2))
     : "N/A";
@@ -62,7 +62,6 @@ const Stockinfo = ({ ticker }) => {
   useEffect(() => {
     async function getChartData() {
       const chartData = await YahooFinanceApi.getChart(ticker.symbol);
-
       setChartData(chartData);
       setLoading(false);
     }
