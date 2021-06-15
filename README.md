@@ -4,7 +4,7 @@ You can view the deployed application at
 <http://marketupdate.surge.sh/>
 
 **Note**
-Yahoofinance Api only accepts ticker symbols, so searching by company name will not return any results.
+YahooFinance Api only accepts ticker symbols, so searching by company name will not return any results.
 
 
 **Front End Tech Stack**
@@ -15,6 +15,8 @@ Yahoofinance Api only accepts ticker symbols, so searching by company name will 
 Node.js, Express, PostgreSQL
 
 **API's**
+
+**Yahoo Finance Api**
 
 (Api Key Required)
 
