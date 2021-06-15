@@ -3,6 +3,9 @@ Market Update is a web based application for tracking stock prices, data, charts
 You can view the deployed application at 
 <http://marketupdate.surge.sh/>
 
+**Note**
+Yahoofinance Api only accepts ticker symbols, so searching by company name will not return any results.
+
 
 **Front End Tech Stack**
 (React, Redux)
