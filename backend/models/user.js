@@ -36,7 +36,9 @@ class User {
     );
 
     const user = result.rows[0];
-
+    if (!user) {
+      throw new UnauthorizedError("Username does not exist");
+    }
     if (user) {
       // compare hashed password to a new hash from password
       const isValid = await bcrypt.compare(password, user.password);
@@ -46,7 +48,7 @@ class User {
       }
     }
 
-    throw new UnauthorizedError("Invalid username/password");
+    throw new UnauthorizedError("Invalid password");
   }
 
   /** Register user with data.
@@ -72,7 +74,7 @@ class User {
     );
 
     if (duplicateCheck.rows[0]) {
-      throw new BadRequestError(`Duplicate username: ${username}`);
+      throw new BadRequestError(`Username ${username} already exists`);
     }
 
     const hashedPassword = await bcrypt.hash(password, BCRYPT_WORK_FACTOR);
@@ -93,25 +95,6 @@ class User {
     const user = result.rows[0];
 
     return user;
-  }
-
-  /** Find all users.
-   *
-   * Returns [{ username, first_name, last_name, email, is_admin }, ...]
-   **/
-
-  static async findAll() {
-    const result = await db.query(
-      `SELECT username,
-                  first_name AS "firstName",
-                  last_name AS "lastName",
-                  email,
-                  is_admin AS "isAdmin"
-           FROM users
-           ORDER BY username`
-    );
-
-    return result.rows;
   }
 
   /** Given a username, return data about user.

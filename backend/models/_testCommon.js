@@ -4,9 +4,6 @@ const db = require("../db.js");
 const { BCRYPT_WORK_FACTOR } = require("../config/config");
 
 async function commonBeforeAll() {
-  // noinspection SqlWithoutWhere
-
-  // noinspection SqlWithoutWhere
   await db.query("DELETE FROM users");
 
   await db.query(

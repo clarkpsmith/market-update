@@ -96,13 +96,7 @@ describe("Login", () => {
 
 describe("Watchlist", () => {
   it("Should show current users watchlist", async () => {
-    const {
-      queryByTestId,
-      queryAllByText,
-      queryByText,
-      getByLabelText,
-      getByPlaceholderText,
-    } = await render(
+    const { queryByTestId, queryAllByText, queryByText } = await render(
       <Provider store={store}>
         <MemoryRouter initialEntries={["/watchlist"]}>
           <App />
