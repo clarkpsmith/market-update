@@ -6,7 +6,7 @@ import NewsSummary from "../news/NewsSummary";
 import ChaseLoading from "../chaseloading/ChaseLoading";
 
 const MktSummary = () => {
-  const [summaryData, setSummaryData] = useState(null);
+  const [summaryData, setSummaryData] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     async function getSummary() {

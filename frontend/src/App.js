@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Navbar from "./navbar/Navbar";
 import { Redirect, Route, Switch, useHistory } from "react-router-dom";
 import Search from "./search/Search";
@@ -11,7 +11,7 @@ import SignUp from "./auth/SignUp";
 import Profile from "./auth/Profile";
 import ProtectedRoute from "./helpers/ProtectedRoute";
 import NewsSummary from "./news/NewsSummary";
-import { UPDATE_PROFILE, LOG_OUT, UPDATE_CURR_USER } from "./actions/types";
+import { LOG_OUT, UPDATE_CURR_USER } from "./actions/types";
 import UserContext from "./common/UserContext";
 import jwt from "jsonwebtoken";
 import MktSummary from "./mktSummary/MktSummary";
@@ -27,6 +27,23 @@ function App() {
 
   const history = useHistory();
 
+  let updateCurrentUser = useCallback(
+    async function updatingCurrentUser(currentToken) {
+      try {
+        if (currentToken) {
+          const { username } = jwt.decode(currentToken);
+          const res2 = await MarketUpdateApi.getCurrentUserData(username);
+          dispatch({ type: UPDATE_CURR_USER, currentUser: res2 });
+          return { success: true };
+        }
+      } catch (err) {
+        console.error("Update current user failed", err);
+        return { success: false, err };
+      }
+    },
+    [dispatch]
+  );
+
   useEffect(() => {
     async function loadUser() {
       MarketUpdateApi.token = currentToken;
@@ -34,21 +51,7 @@ function App() {
     }
 
     loadUser();
-  }, [currentToken]);
-
-  async function updateCurrentUser(currentToken) {
-    try {
-      if (currentToken) {
-        const { username } = jwt.decode(currentToken);
-        const res2 = await MarketUpdateApi.getCurrentUserData(username);
-        dispatch({ type: UPDATE_CURR_USER, currentUser: res2 });
-        return { success: true };
-      }
-    } catch (err) {
-      console.error("Update current user failed", err);
-      return { success: false, err };
-    }
-  }
+  }, [currentToken, updateCurrentUser]);
 
   function addTokenToLocalStorage(token) {
     localStorage.setItem("token", token);
@@ -92,17 +95,6 @@ function App() {
       return { success: false, err };
     }
   }
-
-  // async function updateProfile(formData) {
-  //   try {
-  //     const res = await MarketUpdateApi.updateProfile(formData);
-  //     dispatch({ type: UPDATE_PROFILE, currentUser: res.user });
-  //     return { success: true };
-  //   } catch (err) {
-  //     console.error("Update Profile Failed", err);
-  //     return { success: false, err };
-  //   }
-  // }
 
   return (
     <div className="App">

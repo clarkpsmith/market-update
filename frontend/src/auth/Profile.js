@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../common/SearchForm.css";
-import UserContext from "../common/UserContext";
 import Alert from "../helpers/Alert";
 import { Button, Form, FormGroup } from "reactstrap";
 import "./SignUp.css";

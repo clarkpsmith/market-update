@@ -14,7 +14,7 @@ const News = ({ ticker }) => {
     }
 
     getNews(ticker);
-  }, []);
+  }, [ticker]);
 
   if (loading) {
     return (

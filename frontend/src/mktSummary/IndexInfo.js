@@ -25,10 +25,10 @@ const IndexInfo = ({ ticker }) => {
   const marketChangeAmt = ticker.regularMarketChange
     ? ticker.regularMarketChange.toFixed(2)
     : "N/A";
-  const [marketChange, setMarketChange] = useState({
+  const marketChange = {
     percent: `${marketChangePercent} %`,
     market: marketChangeAmt,
-  });
+  };
   const [percent, setPercent] = useState(true);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const IndexInfo = ({ ticker }) => {
       setLoading(false);
     }
     getChartData();
-  }, []);
+  }, [ticker.symbol]);
 
   function handleClick() {
     percent ? setPercent(false) : setPercent(true);

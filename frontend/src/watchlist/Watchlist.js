@@ -27,7 +27,7 @@ const Watchlist = () => {
     }
 
     getStocks(watchlistString);
-  }, [watchlist]);
+  }, [watchlist, watchlistString, dispatch]);
 
   if (loading) {
     return (

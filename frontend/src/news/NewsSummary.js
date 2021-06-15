@@ -22,7 +22,7 @@ const NewsSummary = ({ numberOfArticles }) => {
       setLoading(false);
     }
     getSummary();
-  }, []);
+  }, [numberOfArticles]);
 
   if (loading)
     return (

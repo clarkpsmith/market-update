@@ -10,10 +10,10 @@ import "./IndexItem.css";
 const IndexItem = ({ ticker }) => {
   const dispatch = useDispatch();
   const [expand, setExpand] = useState(false);
-  const [marketChange, setMarketChange] = useState({
+  const marketChange = {
     percent: `${ticker.regularMarketChangePercent.toFixed(2)} %`,
     market: ticker.regularMarketChange.toFixed(2),
-  });
+  };
   const [percent, setPercent] = useState(true);
 
   function handleClick() {

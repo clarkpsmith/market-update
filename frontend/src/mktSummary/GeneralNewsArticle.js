@@ -13,7 +13,6 @@ const GeneralNewsArticle = ({ data }) => {
 
   return (
     <div className="Article">
-      <a aria-label={data.link} className="Article-link" href={data.link}></a>
       <h5 className="Article-title" onClick={handleDetails}>
         {data.title}
       </h5>

@@ -22,10 +22,10 @@ const Item = ({ ticker }) => {
     alreadyAdded = currentUser.watchlist.filter((t) => t === ticker.symbol);
   const [expand, setExpand] = useState(false);
   const [added, setAdded] = useState(alreadyAdded.length !== 0);
-  const [marketChange, setMarketChange] = useState({
+  const marketChange = {
     percent: `${ticker.regularMarketChangePercent.toFixed(2)} %`,
     market: ticker.regularMarketChange.toFixed(2),
-  });
+  };
   const [percent, setPercent] = useState(true);
 
   function handleClick() {
