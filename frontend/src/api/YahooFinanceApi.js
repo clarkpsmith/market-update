@@ -1,12 +1,11 @@
 import axios from "axios";
-import { yahooFinanceApiKey } from "../apiKey";
 const BASE_URL = "https://apidojo-yahoo-finance-v1.p.rapidapi.com";
 
 class YahooFinanceApi {
   static async request(endpoint, method = "get") {
     const url = `${BASE_URL}/${endpoint}`;
     const headers = {
-      "x-rapidapi-key": yahooFinanceApiKey,
+      "x-rapidapi-key": process.env.REACT_APP_YAHOO_FINANCE_API_KEY,
       "x-rapidapi-host": `apidojo-yahoo-finance-v1.p.rapidapi.com`,
     };
 
