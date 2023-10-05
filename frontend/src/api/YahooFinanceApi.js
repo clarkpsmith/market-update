@@ -58,7 +58,7 @@ class YahooFinanceApi {
   }
   static async getStockNews(symbol) {
     const headers = {
-      "x-rapidapi-key": yahooFinanceApiKey,
+      "x-rapidapi-key": process.env.REACT_APP_YAHOO_FINANCE_API_KEY,
       "x-rapidapi-host": `yahoo-finance15.p.rapidapi.com`,
     };
 
@@ -75,7 +75,7 @@ class YahooFinanceApi {
 
   static async getStockNewsSummary() {
     const headers = {
-      "x-rapidapi-key": yahooFinanceApiKey,
+      "x-rapidapi-key": process.env.REACT_APP_YAHOO_FINANCE_API_KEY,
       "x-rapidapi-host": `yahoo-finance15.p.rapidapi.com`,
     };
 
