@@ -127,7 +127,10 @@ function App() {
             <Route exact path="/delete">
               <ProtectedRoute Component={Delete} />
             </Route>
+            <Route path="*">
             <Redirect to="/"></Redirect>
+            </Route>
+      
           </Switch>
         </main>
       </UserContext.Provider>
